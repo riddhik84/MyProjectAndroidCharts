@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyProjectAndroidCharts</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="app_header">Android Charts</string>
+    <string name="mpandro_chart">MPAndroidChart BarChart</string>
+    <string name="william_chart">WilliamChart</string>
+    <string name="hello_charts">HelloCharts</string>
+    <string name="title_activity_mpandroid_chart">MPAndroidChartActivity</string>
+
+</resources>
