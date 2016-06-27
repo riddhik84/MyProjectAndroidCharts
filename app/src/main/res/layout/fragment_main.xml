@@ -27,6 +27,14 @@
         android:text="@string/mpandro_chart" />
 
     <Button
+        android:id="@+id/mpandroidlinechart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/mpandro_line_chart" />
+
+    <Button
         android:id="@+id/williamchart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,5 +49,13 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:text="@string/hello_charts" />
+
+    <Button
+        android:id="@+id/sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/sample" />
 
 </LinearLayout>

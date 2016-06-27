@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.riddhik.myapps.myprojectandroidcharts">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +23,24 @@
         <activity
             android:name=".MPAndroidChartActivity"
             android:label="@string/title_activity_mpandroid_chart"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.riddhik.myapps.myprojectandroidcharts.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MPAndroidLineChartActivity"
+            android:label="@string/title_activity_mpandroid_line_chart"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.riddhik.myapps.myprojectandroidcharts.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SampleActivity"
+            android:label="@string/title_activity_sample"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

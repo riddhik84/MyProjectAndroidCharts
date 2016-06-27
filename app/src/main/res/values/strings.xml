@@ -4,8 +4,14 @@
 
     <string name="app_header">Android Charts</string>
     <string name="mpandro_chart">MPAndroidChart BarChart</string>
+    <string name="mpandro_line_chart">MPAndroidChart LineChart</string>
+
     <string name="william_chart">WilliamChart</string>
     <string name="hello_charts">HelloCharts</string>
+    <string name="sample">Sample</string>
+
     <string name="title_activity_mpandroid_chart">MPAndroidChartActivity</string>
+    <string name="title_activity_mpandroid_line_chart">MPAndroidLineChartActivity</string>
+    <string name="title_activity_sample">SampleActivity</string>
 
 </resources>

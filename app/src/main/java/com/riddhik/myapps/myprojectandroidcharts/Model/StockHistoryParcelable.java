@@ -6,29 +6,29 @@ import android.os.Parcelable;
 /**
  * Created by rkakadia on 6/27/2016.
  */
-public class StockHistoryData implements Parcelable {
+public class StockHistoryParcelable implements Parcelable {
 
     public String date;
     public double close;
 
-    public final Parcelable.Creator<StockHistoryData> CREATOR = new Parcelable.Creator<StockHistoryData>() {
+    public final Parcelable.Creator<StockHistoryParcelable> CREATOR = new Parcelable.Creator<StockHistoryParcelable>() {
         @Override
-        public StockHistoryData createFromParcel(Parcel parcel) {
-            return new StockHistoryData(parcel);
+        public StockHistoryParcelable createFromParcel(Parcel parcel) {
+            return new StockHistoryParcelable(parcel);
         }
 
         @Override
-        public StockHistoryData[] newArray(int size) {
-            return new StockHistoryData[size];
+        public StockHistoryParcelable[] newArray(int size) {
+            return new StockHistoryParcelable[size];
         }
     };
 
-    public StockHistoryData(String _date, double _close) {
+    public StockHistoryParcelable(String _date, double _close) {
         date = _date;
         close = _close;
     }
 
-    private StockHistoryData(Parcel in) {
+    private StockHistoryParcelable(Parcel in) {
         date = in.readString();
         close = in.readDouble();
     }

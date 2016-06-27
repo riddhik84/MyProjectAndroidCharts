@@ -9,16 +9,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.utils.Utils;
+import com.riddhik.myapps.myprojectandroidcharts.Model.StockHistoryParcelable;
+import com.riddhik.myapps.myprojectandroidcharts.Model.StockSyncTask;
+
+import org.json.JSONException;
 
 import java.util.ArrayList;
 
 public class MPAndroidChartActivity extends AppCompatActivity {
+
+    BarChart barChart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +43,7 @@ public class MPAndroidChartActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        BarChart barChart = (BarChart) findViewById(R.id.barchart);
-
+        barChart = (BarChart) findViewById(R.id.barchart);
         BarData data = new BarData(getXAxisValues(), getDataSet());
         barChart.setData(data);
         barChart.setDescription("My Chart");
